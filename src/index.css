@@ -8,30 +8,30 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Fresh, natural colors for smoothie brand */
-    --background: 120 50% 97%;
-    --foreground: 140 85% 8%;
+    /* Realistic, vivid and darker colors for smoothie brand */
+    --background: 45 15% 96%;
+    --foreground: 155 95% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 140 85% 8%;
+    --card-foreground: 155 95% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 140 85% 8%;
+    --popover-foreground: 155 95% 8%;
 
-    /* Primary: Fresh green for natural/organic feel */
-    --primary: 142 72% 29%;
+    /* Primary: Deep forest green */
+    --primary: 155 85% 15%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 142 65% 45%;
+    --primary-glow: 155 70% 25%;
 
-    /* Secondary: Vibrant orange for citrus */
-    --secondary: 32 98% 60%;
+    /* Secondary: Rich vibrant orange */
+    --secondary: 25 100% 50%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 120 30% 95%;
-    --muted-foreground: 140 25% 45%;
+    --muted: 45 20% 92%;
+    --muted-foreground: 155 30% 35%;
 
-    /* Accent: Fresh berry pink */
-    --accent: 340 75% 65%;
+    /* Accent: Deep berry purple */
+    --accent: 320 85% 45%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -43,14 +43,16 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Gradients for beautiful backgrounds */
-    --gradient-fresh: linear-gradient(135deg, hsl(142 72% 29%), hsl(32 98% 60%));
-    --gradient-berry: linear-gradient(135deg, hsl(340 75% 65%), hsl(32 98% 60%));
-    --gradient-nature: linear-gradient(180deg, hsl(120 50% 97%), hsl(142 25% 85%));
+    /* Rich gradients with deeper colors */
+    --gradient-fresh: linear-gradient(135deg, hsl(155 85% 15%), hsl(25 100% 50%));
+    --gradient-berry: linear-gradient(135deg, hsl(320 85% 45%), hsl(25 100% 50%));
+    --gradient-nature: linear-gradient(180deg, hsl(45 15% 96%), hsl(155 40% 75%));
+    --gradient-dramatic: linear-gradient(135deg, hsl(155 85% 15%), hsl(320 85% 45%), hsl(25 100% 50%));
     
-    /* Shadows with natural colors */
-    --shadow-fresh: 0 10px 30px -10px hsl(142 72% 29% / 0.3);
-    --shadow-glow: 0 0 40px hsl(142 65% 45% / 0.4);
+    /* Enhanced shadows with richer colors */
+    --shadow-fresh: 0 15px 35px -10px hsl(155 85% 15% / 0.4);
+    --shadow-glow: 0 0 50px hsl(155 70% 25% / 0.6);
+    --shadow-dramatic: 0 20px 40px -15px hsl(320 85% 45% / 0.3);
     
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -73,27 +75,27 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 140 25% 8%;
-    --foreground: 120 50% 95%;
+    --background: 155 30% 5%;
+    --foreground: 45 15% 95%;
 
-    --card: 140 30% 12%;
-    --card-foreground: 120 50% 95%;
+    --card: 155 25% 8%;
+    --card-foreground: 45 15% 95%;
 
-    --popover: 140 30% 12%;
-    --popover-foreground: 120 50% 95%;
+    --popover: 155 25% 8%;
+    --popover-foreground: 45 15% 95%;
 
-    --primary: 142 65% 45%;
-    --primary-foreground: 140 85% 8%;
-    --primary-glow: 142 55% 35%;
+    --primary: 155 70% 35%;
+    --primary-foreground: 155 95% 8%;
+    --primary-glow: 155 60% 25%;
 
-    --secondary: 32 88% 55%;
-    --secondary-foreground: 140 85% 8%;
+    --secondary: 25 90% 55%;
+    --secondary-foreground: 155 95% 8%;
 
-    --muted: 140 20% 15%;
-    --muted-foreground: 140 15% 65%;
+    --muted: 155 20% 12%;
+    --muted-foreground: 155 15% 70%;
 
-    --accent: 340 65% 60%;
-    --accent-foreground: 140 85% 8%;
+    --accent: 320 75% 55%;
+    --accent-foreground: 155 95% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;

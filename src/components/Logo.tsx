@@ -1,4 +1,4 @@
-import logoImage from "@/assets/logo-batijugos.png";
+import logoImage from "@/assets/logo-batijugos-realistic.png";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl";
@@ -18,7 +18,7 @@ const Logo = ({ size = "md", className = "" }: LogoProps) => {
       <img 
         src={logoImage} 
         alt="Los batijugos de la finca" 
-        className={`${sizeClasses[size]} object-contain rounded-lg shadow-fresh transition-transform duration-300 hover:scale-105`}
+        className={`${sizeClasses[size]} object-contain rounded-xl shadow-dramatic transition-all duration-300 hover:scale-110 hover:shadow-glow`}
       />
       <div className="flex flex-col">
         <h1 className={`font-bold text-primary leading-tight ${

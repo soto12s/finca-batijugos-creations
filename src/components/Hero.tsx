@@ -13,7 +13,7 @@ const Hero = () => {
 
         {/* Mensaje Principal */}
         <div className="space-y-6">
-          <h2 className="text-4xl md:text-6xl font-bold text-primary leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold text-primary leading-tight drop-shadow-lg">
             Sabores frescos
             <span className="block text-secondary">directo de la finca</span>
           </h2>
@@ -26,7 +26,7 @@ const Hero = () => {
 
         {/* Características */}
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-fresh">
+          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-dramatic hover:shadow-glow transition-all duration-300 hover:scale-105">
             <div className="p-3 bg-gradient-fresh rounded-full">
               <Leaf className="h-6 w-6 text-primary-foreground" />
             </div>
@@ -36,7 +36,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-fresh">
+          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-dramatic hover:shadow-glow transition-all duration-300 hover:scale-105">
             <div className="p-3 bg-gradient-berry rounded-full">
               <Droplets className="h-6 w-6 text-accent-foreground" />
             </div>
@@ -46,8 +46,8 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-fresh">
-            <div className="p-3 bg-secondary rounded-full">
+          <div className="flex flex-col items-center space-y-3 p-6 bg-card rounded-xl shadow-dramatic hover:shadow-glow transition-all duration-300 hover:scale-105">
+            <div className="p-3 bg-gradient-dramatic rounded-full shadow-glow">
               <Heart className="h-6 w-6 text-secondary-foreground" />
             </div>
             <h3 className="font-semibold text-primary">Con Amor</h3>
@@ -59,10 +59,10 @@ const Hero = () => {
 
         {/* Call to Action */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-          <Button size="lg" className="bg-gradient-fresh text-primary-foreground font-semibold px-8 py-3 rounded-xl shadow-glow hover:shadow-fresh transition-all duration-300 hover:scale-105">
+          <Button size="lg" className="bg-gradient-dramatic text-primary-foreground font-bold px-10 py-4 rounded-xl shadow-glow hover:shadow-dramatic transition-all duration-300 hover:scale-110 border-0">
             Ver Nuestros Sabores
           </Button>
-          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-3 rounded-xl transition-all duration-300">
+          <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold px-10 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-fresh">
             Conoce la Finca
           </Button>
         </div>

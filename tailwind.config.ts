@@ -72,11 +72,13 @@ export default {
 			backgroundImage: {
 				'gradient-fresh': 'var(--gradient-fresh)',
 				'gradient-berry': 'var(--gradient-berry)',
-				'gradient-nature': 'var(--gradient-nature)'
+				'gradient-nature': 'var(--gradient-nature)',
+				'gradient-dramatic': 'var(--gradient-dramatic)'
 			},
 			boxShadow: {
 				'fresh': 'var(--shadow-fresh)',
-				'glow': 'var(--shadow-glow)'
+				'glow': 'var(--shadow-glow)',
+				'dramatic': 'var(--shadow-dramatic)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)'
