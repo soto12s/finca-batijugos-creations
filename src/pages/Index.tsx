@@ -8,13 +8,15 @@ const Index = () => {
   return (
     <div>
       <Hero />
-      <div className="fixed top-4 right-4">
+      <div className="fixed top-2 right-2 sm:top-4 sm:right-4 z-50">
         <Button 
           onClick={() => navigate('/pitch')}
           variant="secondary"
-          className="shadow-dramatic"
+          className="shadow-dramatic text-xs sm:text-sm px-3 sm:px-4 py-2"
+          size="sm"
         >
-          Ver Pitch 🚀
+          <span className="hidden sm:inline">Ver Pitch 🚀</span>
+          <span className="sm:hidden">Pitch 🚀</span>
         </Button>
       </div>
     </div>

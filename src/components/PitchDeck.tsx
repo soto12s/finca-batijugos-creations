@@ -328,25 +328,27 @@ const PitchDeck = () => {
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-6 lg:py-8">
         {/* Navigation */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-4 sm:mb-6 lg:mb-8">
           <Button
             variant="outline"
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2"
+            size="sm"
           >
-            <ChevronLeft className="h-4 w-4" />
-            <span>Anterior</span>
+            <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+            <span className="hidden sm:inline">Anterior</span>
+            <span className="sm:hidden">Ant</span>
           </Button>
           
-          <div className="flex space-x-2">
+          <div className="flex space-x-1 sm:space-x-2">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all ${
                   currentSlide === index 
                     ? 'bg-primary scale-125' 
                     : 'bg-primary/30 hover:bg-primary/50'
@@ -359,30 +361,32 @@ const PitchDeck = () => {
             variant="outline"
             onClick={nextSlide}
             disabled={currentSlide === slides.length - 1}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2"
+            size="sm"
           >
-            <span>Siguiente</span>
-            <ChevronRight className="h-4 w-4" />
+            <span className="hidden sm:inline">Siguiente</span>
+            <span className="sm:hidden">Sig</span>
+            <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
           </Button>
         </div>
 
         {/* Slide Content */}
-        <div className="bg-background rounded-xl shadow-dramatic p-8 md:p-12 min-h-[600px] flex flex-col">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <div className="bg-background rounded-lg sm:rounded-xl shadow-dramatic p-4 sm:p-6 md:p-8 lg:p-12 min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] flex flex-col">
+          <div className="text-center mb-4 sm:mb-6 lg:mb-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 sm:mb-4 px-2">
               {slides[currentSlide].title}
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground px-2">
               {slides[currentSlide].subtitle}
             </p>
           </div>
           
-          <div className="flex-1">
+          <div className="flex-1 overflow-auto">
             {slides[currentSlide].content}
           </div>
 
           {/* Slide counter */}
-          <div className="text-center mt-8 text-sm text-muted-foreground">
+          <div className="text-center mt-4 sm:mt-6 lg:mt-8 text-xs sm:text-sm text-muted-foreground">
             {currentSlide + 1} de {slides.length}
           </div>
         </div>
